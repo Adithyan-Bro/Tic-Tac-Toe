@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #548687;
+    text-align: center;
+}
+#gameContainer{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cellContainer{
+    width: 60vmin;
+    height: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+  
+}
+.cell{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    font-size: 13vmin;
+    color: #b0413e;
+    cursor: pointer;
+    background-color: #fff;
+    text-align: center;
+    justify-items: center;
+}
+.cell:hover{
+    background-color: hsl(180, 100%, 50%);
+}
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    border: none;
+    color: #fff;
+    box-shadow:0 0 0.3rem #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-wrap: wrap;
+    justify-items: center;
+}
+#reset-btn:hover{
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+}
+.statusText{
+    margin-bottom: 3vmin;
+    font: bolder;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gold;
+    text-align: center;
+    justify-content: center;
+}
+.hide{
+    display: none;
+}
